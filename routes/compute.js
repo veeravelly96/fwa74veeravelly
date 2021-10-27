@@ -11,9 +11,9 @@ router.get('/', function(req, res, next) {
     //console.log(Number(search_params.get("x"))+"hello")
     if(storeValue == 0)
     storeValue=Math.random()
-    res.write("Computes the values for Math.atan and math.exp function."+"\n")
-    res.write('Math.atan applied to '+storeValue+" is "+Math.cos(storeValue)+"\n");
-    res.end('Math.exp applied to '+storeValue+" is "+Math.asin(storeValue));
+    res.write("Computes the values for Math.acos and math.asin function."+"\n")
+    res.write('Math.acos applied to '+storeValue+" is "+Math.cos(storeValue)+"\n");
+    res.end('Math.asin applied to '+storeValue+" is "+Math.asin(storeValue));
  });
 
 module.exports = router;
